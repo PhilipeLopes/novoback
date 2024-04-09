@@ -74,3 +74,49 @@ custoImpostos = custoFabrica * percentualImpostos;
 custoConsumidor = custoFabrica + custoDistribuidor + custoImpostos;
 
 console.log(`Custo final ao consumidor: R$ ${custoConsumidor}`);
+
+// 6 )
+
+let numeroCarrosVendidos = parseInt(prompt("Digite o número de carros vendidos:"));
+let valorTotalVendas = parseFloat(prompt("Digite o valor total das vendas:"));
+let salarioFixo = parseFloat(prompt("Digite o salário fixo do vendedor:"));
+let valorPorCarroVendido = parseFloat(prompt("Digite o valor por carro vendido:"));
+
+let comissao = 0.05 * valorTotalVendas;
+
+let salarioFinal = salarioFixo + (numeroCarrosVendidos * valorPorCarroVendido) + comissao;
+
+console.log(`Salário final do vendedor: R$ ${salarioFinal}`);
+
+// 7 )
+
+let nota11 = parseFloat(prompt("Digite a primeira nota:"));
+let nota22 = parseFloat(prompt("Digite a segunda nota:"));
+
+let pesoNota1 = 4;
+let pesoNota2 = 6;
+let mediaPonderada = (nota11 * pesoNota1 + nota22 * pesoNota2) / (pesoNota1 + pesoNota2);
+
+console.log(`Média final do aluno: ${mediaPonderada}`);
+
+
+// 8 ) 
+
+let raio = parseFloat(prompt("Digite o raio da caixa d'água:"));
+let altura = parseFloat(prompt("Digite a altura da caixa d'água:"));
+const PI = 3.14;
+let volume = PI * (raio ** 2) * altura;
+
+console.log(`Volume da caixa d'água: ${volume} unidades cúbicas`);
+
+
+// 9 )
+
+let numero1 = parseFloat(prompt("Digite o primeiro número:"));
+let numero2 = parseFloat(prompt("Digite o segundo número:"));
+let soma = numero1 + numero2;
+let multiplicacao = soma * numero1;
+
+
+console.log(`Soma: ${soma}`);
+console.log(`Multiplicação pelo primeiro número: ${multiplicacao}`);
