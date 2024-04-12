@@ -39,7 +39,20 @@ router.get("/produtos/:id", (req, res) => {
 })
 
 // create -> criar um novo produto 
-const ListaProdutos = [
+
+router.post('/produtos ', (req, res) => {
+const i = req.body.id
+const ii = {
+    id: ListaProduto.length + 1,
+    nome: ii.nome,
+    valor: ii.preco,
+}
+res.json(produtoencontrado)
+
+})
+
+
+const ListaProduto2 = [
     {
         id: 1,
         nome: "arroz",
